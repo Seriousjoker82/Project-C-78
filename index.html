@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+     Family Book
+     </title>
+    
+    </head>
+  <body >
+    <h1 
+       id = "Firstp">My Family Book
+  </h1>
+ 
+    <img id= "Pics"  src="OIP (1).jpg">
+   
+    <p id= "Names">
+ HI
+    </p>
+    <div>
+        <button onclick="nextPic()">Next</button>
+        </div>
+        <style>
+          img{
+            width: 400px;
+            length:400px;
+
+          }
+          body{
+            text-align: center;
+            background-color: aqua;
+          }
+          h1{
+          font-variant: small-caps;
+          }
+        </style>
+    <script>
+var names = ["Rajul Mathur", "Payal Mathur","Ridhit Mathur","Rivaan Mathur" ]
+var Pic = ["IMG_3919.jpg", "Payal.JPG","Ridhit.JPG","Rivaan.jpeg"]
+var i=0;
+function nextPic(){
+  document.getElementById("Names").innerHTML=names[i];
+document.getElementById("Pics").src=Pic[i];
+  i++;
+  if (i==4)
+    {
+      i=0;
+    }
+} 
+    </script>
+</body>
+</html>  
+  
